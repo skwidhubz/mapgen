@@ -21,17 +21,16 @@ function getRandomArray() {
 };
 
 function generateShape () {
-    const randomVal = xyRandomGen()
+
     const countArray = getRandomArray();
 
-
     for (let i = 0; i < countArray.length; i++) {
+        const randomVal = xyRandomGen()
         ctx.strokeRect(randomVal.random1, randomVal.random2, randomVal.random2, randomVal.random2);  
     };
     
     console.log(countArray);
 
-    console.log(randomVal);
 
 };
 
